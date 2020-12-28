@@ -1,0 +1,124 @@
+@keyframes slideDown{
+	from{
+		opacity: 0;
+		transform: translateY(-30px);
+    }
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+[data-anima="down"] {
+    animation: slideDown .5s forwards;
+}
+[data-anima="down2"] {
+    animation: slideDown 1s forwards;
+}
+
+@keyframes slideUp{
+	from{
+		opacity: 0;
+		transform: translateY(50px);
+    }
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+[data-anima="up"] {
+    animation: slideUp .5s forwards;
+}
+[data-anima="up2"] {
+    animation: slideUp 1s forwards;
+}
+
+@keyframes slideRight{
+	from{
+		opacity: 0;
+		transform: translateX(-30px);
+    }
+	to{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+[data-anima="right"] {
+    animation: slideRight .5s forwards;
+}
+[data-anima="right2"] {
+    animation: slideRight 1s forwards;
+}
+
+
+@keyframes slideLeft{
+	from{
+		opacity: 0;
+		transform: translateX(30px);
+    }
+	to{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+[data-anima="left"] {
+    animation: slideLeft .5s forwards;
+}
+[data-anima="left2"] {
+    animation: slideLeft 1s forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+[data-scrollAnima="right"]{
+	opacity: 0;
+	transition: 1.5s;
+	transform: translateX(-30px);
+}
+[data-scrollAnima="right"].ativo{
+	opacity: 1;
+	transform: translateX(0);
+}
+
+
+
+[data-scrollAnima="left"]{
+	opacity: 0;
+	transition: 1s;
+	transform: translateX(10px);
+}
+[data-scrollAnima="left"].ativo{
+	opacity: 1;
+	transform: translateX(0);
+}
+
+
+
+[data-scrollAnima="up"]{
+	opacity: .5;
+	transition: 1s;
+	transform: translateY(10px);
+}
+[data-scrollAnima="up"].ativo{
+	opacity: 1;
+	transform: translateY(0);
+}
+
+
+
+[data-scrollAnima="down"]{
+	opacity: 0;
+	transition: 1s;
+	transform: translateY(-10px);
+}
+[data-scrollAnima="down"].ativo{
+	opacity: 1;
+	transform: translateY(0);
+}
